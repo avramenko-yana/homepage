@@ -1,10 +1,9 @@
-// script.js
+ 
 document.addEventListener("DOMContentLoaded", () => {
   const introText = document.querySelector(".intro_text");
   const avatar = document.querySelector(".contact-info__avatar");
   const blocks = document.querySelectorAll(".resume__block");
-
-  // Появление текста с эффектом "набора"
+ 
   let text = introText.textContent;
   introText.textContent = "";
   let i = 0;
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (i >= text.length) clearInterval(typing);
   }, 30);
 
-  // Анимация аватара
+   
   avatar.style.transition = "transform 1.2s ease, box-shadow 1.2s";
   avatar.addEventListener("mouseenter", () => {
     avatar.style.transform = "scale(1.1)";
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     avatar.style.boxShadow = "none";
   });
 
-  // Плавное появление блоков при прокрутке
+   
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {

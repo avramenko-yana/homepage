@@ -5,6 +5,7 @@
 }
 
 body {
+    
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 
@@ -15,7 +16,7 @@ body {
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
 }
-
+ 
 .container {
     margin: 0 auto;
     padding: 0 30px;
@@ -40,6 +41,7 @@ body {
     box-shadow: 1px 1px 7px 7px #f5f5f5;
     padding: 30px 0;
     max-width: 900px;
+    height: 2000px;
 }
 
 .resume__block {
@@ -125,8 +127,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width:200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
@@ -257,7 +259,7 @@ body {
 
 .additional-info__languages-header {
     color: var(--secondary-text-color);
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
 
